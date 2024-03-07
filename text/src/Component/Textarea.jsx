@@ -33,7 +33,7 @@ export default function Textarea(props) {
             <div className='container mt-5' >
 
                     <h2> Text Area TRY IT </h2>
-                    <textarea className="form-control" value={text} onChange={handleOnClick} placeholder='Enter your text here' rows="8" ></textarea>
+                    <textarea className="form-control"  onChange={handleOnClick} placeholder='Enter your text here' rows="8" style={{ backgroundColor: props.mode==='light'?'white':'rgb(59 58 58)' , color: props.mode==='light'?'black':'white' }} value ={text}></textarea>
                     <button className='btn btn-primary mt-3 mx-2 my-2' onClick={toupper}>convert to uppercase</button>
                     <button className='btn btn-primary mt-3 mx-2 my-2' onClick={tolower}>convert to uppercase</button>
                     <button className='btn btn-primary mt-3 mx-2 my-2' onClick={cleartext}>clear text</button>
