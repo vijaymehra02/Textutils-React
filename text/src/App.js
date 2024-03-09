@@ -32,9 +32,9 @@ function App() {
       <Router>
         <Navebar tital='textutill' mode={mode} toggelmode={toggelmode} />
         <Routes>
-          <Route path="/" element={ <Textarea placeholder="Enter your text here" mode={mode} />}>
+          <Route exact path="/" element={ <Textarea placeholder="Enter your text here" mode={mode} />}>
           </Route>
-          <Route path="About/" element = {<About mode={mode} />}> 
+          <Route exact path="About/" element = {<About mode={mode} />}> 
           </Route>
         </Routes>
       </Router>
