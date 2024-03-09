@@ -45,7 +45,7 @@ export default function Textarea(props) {
         </div>
         <div className="container" style = {{color : props.mode === 'light' ? 'black':'white'}} >
             <h1>Your Text Summery</h1>
-            <p>Words : {text.split(" ").filter((element)=>{return element.length !==0}).length} And Latter : {text.length}</p>
+            <p>Words : {text.split(/\s+/).filter((element)=>{return element.length !==0}).length} And Latter : {text.length}</p>
         </div>
         </>
 
